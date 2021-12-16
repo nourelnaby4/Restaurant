@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBrestureantModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbl_customer">
+    <Key>
+      <PropertyRef Name="id_customer" />
+    </Key>
+    <Property Name="id_customer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_customer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address_customer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="phone_customer" Type="Int32" Nullable="false" />
+    <Property Name="email_customer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_process" Relationship="Self.FK_tbl_process_tbl_customer" FromRole="tbl_customer" ToRole="tbl_process" />
+  </EntityType>
+  <EntityType Name="tbl_delivery">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_order">
+    <Key>
+      <PropertyRef Name="id_order" />
+    </Key>
+    <Property Name="id_order" Type="Int32" Nullable="false" />
+    <Property Name="name_order" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tbl_process" Relationship="Self.FK_tbl_process_tbl_order" FromRole="tbl_order" ToRole="tbl_process" />
+  </EntityType>
+  <EntityType Name="tbl_process">
+    <Key>
+      <PropertyRef Name="id_customer" />
+      <PropertyRef Name="id_order" />
+    </Key>
+    <Property Name="id_customer" Type="Int32" Nullable="false" />
+    <Property Name="id_order" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_customer" Relationship="Self.FK_tbl_process_tbl_customer" FromRole="tbl_process" ToRole="tbl_customer" />
+    <NavigationProperty Name="tbl_order" Relationship="Self.FK_tbl_process_tbl_order" FromRole="tbl_process" ToRole="tbl_order" />
+  </EntityType>
+  <Association Name="FK_tbl_process_tbl_customer">
+    <End Role="tbl_customer" Type="Self.tbl_customer" Multiplicity="1" />
+    <End Role="tbl_process" Type="Self.tbl_process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_customer">
+        <PropertyRef Name="id_customer" />
+      </Principal>
+      <Dependent Role="tbl_process">
+        <PropertyRef Name="id_customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_process_tbl_order">
+    <End Role="tbl_order" Type="Self.tbl_order" Multiplicity="1" />
+    <End Role="tbl_process" Type="Self.tbl_process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_order">
+        <PropertyRef Name="id_order" />
+      </Principal>
+      <Dependent Role="tbl_process">
+        <PropertyRef Name="id_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBrestureantEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tbl_customer" EntityType="Self.tbl_customer" />
+    <EntitySet Name="tbl_delivery" EntityType="Self.tbl_delivery" />
+    <EntitySet Name="tbl_order" EntityType="Self.tbl_order" />
+    <EntitySet Name="tbl_process" EntityType="Self.tbl_process" />
+    <AssociationSet Name="FK_tbl_process_tbl_customer" Association="Self.FK_tbl_process_tbl_customer">
+      <End Role="tbl_customer" EntitySet="tbl_customer" />
+      <End Role="tbl_process" EntitySet="tbl_process" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_process_tbl_order" Association="Self.FK_tbl_process_tbl_order">
+      <End Role="tbl_order" EntitySet="tbl_order" />
+      <End Role="tbl_process" EntitySet="tbl_process" />
+    </AssociationSet>
+    <EntitySet Name="all_data" EntityType="DBrestureantModel.all_data" />
+  </EntityContainer>
+  <EntityType Name="all_data">
+    <Key>
+      <PropertyRef Name="name_customer" />
+      <PropertyRef Name="name_order" />
+    </Key>
+    <Property Name="name_customer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name_order" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

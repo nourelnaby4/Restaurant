@@ -1,0 +1,79 @@
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form1.resources
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Properties.Resources.resources
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.exe
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.pdb
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_dessert.resources
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_about.resources
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_fastfood.resources
+F:\documents and settings\geforce\my documents\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_drinks.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.exe.config
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.dll
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.dll
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.xml
+D:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.xml
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csprojAssemblyReference.cache
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.delivery.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form1.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_fastfood.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form3.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_about.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_dessert.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_drinks.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Properties.Resources.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.registration_cus.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.GenerateResource.cache
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CoreCompileInputs.cache
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CopyComplete
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.exe
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.pdb
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form4.resources
+D:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.delivery_registration.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.exe.config
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.dll
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.dll
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.xml
+F:\visual studio 2010\Projects\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.xml
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.AssemblyReference.cache
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.delivery.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.delivery_registration.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_fastfood.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form3.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Form4.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_about.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_dessert.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_drinks.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Properties.Resources.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.registration_cus.resources
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.GenerateResource.cache
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CoreCompileInputs.cache
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CopyComplete
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.exe
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.pdb
+F:\visual studio 2010\Projects\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Home.resources
+F:\rest3\Restaurant\Restaurant\bin\Debug\Restaurant.exe.config
+F:\rest3\Restaurant\Restaurant\bin\Debug\Restaurant.exe
+F:\rest3\Restaurant\Restaurant\bin\Debug\Restaurant.pdb
+F:\rest3\Restaurant\Restaurant\bin\Debug\EntityFramework.dll
+F:\rest3\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.dll
+F:\rest3\Restaurant\Restaurant\bin\Debug\EntityFramework.xml
+F:\rest3\Restaurant\Restaurant\bin\Debug\EntityFramework.SqlServer.xml
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.AssemblyReference.cache
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Home.resources
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_fastfood.resources
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_about.resources
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.form_dessert.resources
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.Properties.Resources.resources
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.GenerateResource.cache
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CoreCompileInputs.cache
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.csproj.CopyComplete
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.exe
+F:\rest3\Restaurant\Restaurant\obj\x86\Debug\Restaurant.pdb

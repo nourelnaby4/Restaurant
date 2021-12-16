@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBrestureantModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_customer">
+    <Key>
+      <PropertyRef Name="id_customer" />
+    </Key>
+    <Property Name="id_customer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name_customer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="address_customer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone_customer" Type="int" Nullable="false" />
+    <Property Name="email_customer" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_delivery">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="user name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_order">
+    <Key>
+      <PropertyRef Name="id_order" />
+    </Key>
+    <Property Name="id_order" Type="int" Nullable="false" />
+    <Property Name="name_order" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBrestureant.dbo.tbl_process' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_process">
+    <Key>
+      <PropertyRef Name="id_customer" />
+      <PropertyRef Name="id_order" />
+    </Key>
+    <Property Name="id_customer" Type="int" Nullable="false" />
+    <Property Name="id_order" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBrestureant.dbo.all_data' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="all_data">
+    <Key>
+      <PropertyRef Name="name_customer" />
+      <PropertyRef Name="name_order" />
+    </Key>
+    <Property Name="name_customer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="name_order" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tbl_process_tbl_customer">
+    <End Role="tbl_customer" Type="Self.tbl_customer" Multiplicity="1" />
+    <End Role="tbl_process" Type="Self.tbl_process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_customer">
+        <PropertyRef Name="id_customer" />
+      </Principal>
+      <Dependent Role="tbl_process">
+        <PropertyRef Name="id_customer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_process_tbl_order">
+    <End Role="tbl_order" Type="Self.tbl_order" Multiplicity="1" />
+    <End Role="tbl_process" Type="Self.tbl_process" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_order">
+        <PropertyRef Name="id_order" />
+      </Principal>
+      <Dependent Role="tbl_process">
+        <PropertyRef Name="id_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBrestureantModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_customer" EntityType="Self.tbl_customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_delivery" EntityType="Self.tbl_delivery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_order" EntityType="Self.tbl_order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_process" EntityType="Self.tbl_process" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_process].[id_customer] AS [id_customer], 
+    [tbl_process].[id_order] AS [id_order]
+    FROM [dbo].[tbl_process] AS [tbl_process]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="all_data" EntityType="Self.all_data" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [all_data].[name_customer] AS [name_customer], 
+    [all_data].[name_order] AS [name_order]
+    FROM [dbo].[all_data] AS [all_data]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tbl_process_tbl_customer" Association="Self.FK_tbl_process_tbl_customer">
+      <End Role="tbl_customer" EntitySet="tbl_customer" />
+      <End Role="tbl_process" EntitySet="tbl_process" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_process_tbl_order" Association="Self.FK_tbl_process_tbl_order">
+      <End Role="tbl_order" EntitySet="tbl_order" />
+      <End Role="tbl_process" EntitySet="tbl_process" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
